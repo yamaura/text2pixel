@@ -9,10 +9,13 @@ on:
 env:
   CARGO_TERM_COLOR: always
 
+defaults:
+  run:
+    working-directory: text2pixel_pages
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    working-directory: text2pixel_pages
     steps:
     - uses: actions/checkout@v2
 #    - run: rustup target add wasm32-unknown-unknown
