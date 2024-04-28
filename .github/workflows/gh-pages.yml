@@ -36,7 +36,7 @@ jobs:
     - run: ./trunk build --release --public-url text2pixel
     - uses: actions/upload-pages-artifact@v3
       with:
-        path: './dist'
+        path: 'text2pixel_pages/dist'
 
   deploy:
     environment:
