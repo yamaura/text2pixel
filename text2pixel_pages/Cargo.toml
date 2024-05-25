@@ -13,3 +13,4 @@ text2pixel = { path = "../" }
 base64 = "0.22.0"
 console_error_panic_hook = "0.1.7"
 leptos = { version = "0.6.11", features = ["csr", "nightly"] }
+any_ascii = "0.3.2"

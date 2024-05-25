@@ -7,7 +7,8 @@ fn text2datapng(text: &str) -> String {
     if text.is_empty() {
         return String::new();
     }
-    let data = text2png(text);
+    let text = any_ascii::any_ascii(&text);
+    let data = text2png(&text);
     let data = BASE64_STANDARD.encode(&data);
     format!("data:image/png;base64,{}", data)
 }

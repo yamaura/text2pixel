@@ -43,8 +43,6 @@ impl embedded_graphics::geometry::OriginDimensions for Canvas {
 }
 
 pub fn text2png(text: &str) -> Vec<u8> {
-    
-
     let (width, height) = text
         .lines()
         .fold((0, 0), |(w, h), line| (w.max(line.len()), h + 1));
